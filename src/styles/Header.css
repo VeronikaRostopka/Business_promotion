@@ -1,0 +1,99 @@
+.header {
+  padding: 24px 0;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Логотип */
+.logo img {
+  height: 32px;
+  width: auto;
+}
+
+/* Навігація */
+.nav-menu ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #22343d;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #02897a;
+}
+
+/* Кнопки */
+.header-buttons {
+  display: flex;
+  gap: 24px;
+}
+
+.header-buttons button {
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sign-in {
+  background: transparent;
+  border: none;
+  color: #22343d;
+}
+
+.sign-in:hover {
+  background: rgba(2, 137, 122, 0.1);
+}
+
+.sign-up {
+  background: #02897a;
+  border: none;
+  color: white;
+}
+
+.sign-up:hover {
+  background: #026d62;
+}
+
+/* Адаптивність */
+@media (max-width: 968px) {
+  .header-content {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none; /* На малих екранах можна додати меню-бургер */
+  }
+
+  .header-buttons {
+    gap: 12px;
+  }
+
+  .header-buttons button {
+    padding: 8px 16px;
+  }
+}

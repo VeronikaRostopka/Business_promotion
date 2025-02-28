@@ -1,0 +1,135 @@
+.price-table {
+  padding: 70px 48px;
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.price-header {
+  margin-bottom: 50px;
+}
+
+.price-header h2 {
+  font-size: 34px;
+  color: #22343d;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.price-header p {
+  font-size: 16px;
+  color: #22343d;
+}
+
+.price-plans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.price-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.price-card:hover {
+  transform: translateY(-5px);
+}
+
+.price-card.popular {
+  background: #02897a;
+  color: white;
+}
+
+.price-card h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.description {
+  font-size: 16px;
+  color: inherit;
+  opacity: 0.7;
+  margin-bottom: 24px;
+}
+
+.price {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 8px;
+}
+
+.price .amount {
+  font-size: 76px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.price .currency {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.price .period {
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px;
+  flex-grow: 1;
+}
+
+.features li {
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.order-button {
+  background: transparent;
+  border: 1px solid currentColor;
+  color: inherit;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.popular .order-button {
+  background: white;
+  color: #02897a;
+  border: none;
+}
+
+.order-button:hover {
+  background: rgba(2, 137, 122, 0.1);
+}
+
+.popular .order-button:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 968px) {
+  .price-plans {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .price-plans {
+    grid-template-columns: 1fr;
+  }
+}
